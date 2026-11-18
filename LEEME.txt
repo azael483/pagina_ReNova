@@ -1,0 +1,30 @@
+RENOVA - SITIO DE PRODUCCION
+============================
+Todo lo que esta en esta carpeta se sube tal cual a tu repositorio (reemplaza el index.html anterior).
+Estructura: index.html, vendor/ (librerias propias), fonts/ (tipografias propias), robots.txt, sitemap.xml,
+_headers (seguridad y cache), icon.svg, og.png (imagen al compartir el enlace).
+
+QUE CAMBIO
+- Sin Google Fonts ni CDN: las librerias y tipografias viajan con tu sitio (mas rapido y mas privado).
+- El generador de PDF (364 KB) solo se descarga cuando alguien lo pide.
+- Fondo ligero (sin desenfoques animados).
+- Preguntas frecuentes, ejemplos, contacto y comparativa ya vienen escritos en el HTML (Google los lee sin ejecutar JavaScript).
+- Datos estructurados (negocio + preguntas frecuentes), canonical, Open Graph, robots y sitemap.
+- Encabezados de seguridad (CSP, anti-clickjacking, etc.).
+- Anti-spam del formulario: 1 envio por minuto por navegador y descarte de envios en menos de 4 s.
+- Base de datos: limites de tamano, maximo 3 solicitudes por numero por hora y 20 por minuto en total,
+  y solo se puede insertar (nadie puede leer, editar ni borrar desde la web).
+
+SI TU CONFIGURACION DE CLOUDFLARE USA UNA CARPETA (por ejemplo public/), pon estos archivos dentro de esa carpeta.
+El archivo _headers solo funciona con Cloudflare (Workers con assets o Pages).
+
+DESPUES DE PUBLICAR (Google)
+1. Entra a https://search.google.com/search-console y agrega tu sitio (propiedad "Prefijo de URL").
+2. Verifica la propiedad (la forma mas simple es la etiqueta HTML meta; pideme que la agregue).
+3. En "Sitemaps" envia: sitemap.xml
+4. En "Inspeccion de URLs" pega la direccion y pulsa "Solicitar indexacion".
+Tarda de dias a semanas en aparecer. Con dominio propio (cuando lo compres) hay que cambiar la direccion en
+canonical, og:url, sitemap.xml y robots.txt (pideme que lo cambie y te devuelvo el paquete).
+
+PENDIENTES QUE REQUIEREN TUS DATOS
+- Enlaces de Instagram y Facebook, correo, fotos del equipo.
